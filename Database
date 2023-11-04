@@ -1,0 +1,57 @@
+MariaDB [(none)]> create database class ;
+Query OK, 1 row affected (0.001 sec)
+
+MariaDB [(none)]> use class;
+Database changed
+MariaDB [class]>
+MariaDB [class]> create table students(sno int(20),rollno int(50),name varchar(30),age int(50),mobile int(50));
+Query OK, 0 rows affected (0.020 sec)
+
+MariaDB [class]> insert into students values(1,11101,"abishek",20,123456789);
+Query OK, 1 row affected (0.035 sec)
+
+MariaDB [class]> insert into students values(2,11102,"arun",20,789456123);
+Query OK, 1 row affected (0.045 sec)
+
+MariaDB [class]> insert into students values(3,11103,"Amarnath",20,456159753);
+Query OK, 1 row affected (0.047 sec)
+
+MariaDB [class]> insert into students values(4,11104,"Boopathy",20,369852147);
+Query OK, 1 row affected (0.013 sec)
+
+MariaDB [class]> insert into students values(5,11105,"Barani",20,159357456);
+Query OK, 1 row affected (0.013 sec)
+
+MariaDB [class]> insert into students values(6,11106,"barath",19,956232147);
+Query OK, 1 row affected (0.012 sec)
+
+MariaDB [class]> insert into students values(7,11107,"Cenu",21,628451357);
+Query OK, 1 row affected (0.011 sec)
+
+MariaDB [class]> insert into students values(8,11108,"Dinesh",20,968574123);
+Query OK, 1 row affected (0.012 sec)
+
+MariaDB [class]> insert into students values(9,11109,"Dhanush",20,654321954);
+Query OK, 1 row affected (0.013 sec)
+
+MariaDB [class]> insert into students values(10,11110,"Gokul",21,988459685);
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [class]> select *from students;
++------+--------+----------+------+-----------+
+| sno  | rollno | name     | age  | mobile    |
++------+--------+----------+------+-----------+
+|    1 |  11101 | abishek  |   20 | 123456789 |
+|    2 |  11102 | arun     |   20 | 789456123 |
+|    3 |  11103 | Amarnath |   20 | 456159753 |
+|    4 |  11104 | Boopathy |   20 | 369852147 |
+|    5 |  11105 | Barani   |   20 | 159357456 |
+|    6 |  11106 | barath   |   19 | 956232147 |
+|    7 |  11107 | Cenu     |   21 | 628451357 |
+|    8 |  11108 | Dinesh   |   20 | 968574123 |
+|    9 |  11109 | Dhanush  |   20 | 654321954 |
+|   10 |  11110 | Gokul    |   21 | 988459685 |
++------+--------+----------+------+-----------+
+10 rows in set (0.011 sec)
+
+MariaDB [class]>
